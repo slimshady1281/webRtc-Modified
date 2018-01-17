@@ -42,9 +42,9 @@ app.get('/', function (req, res) {
 
 var webServer = https.createServer(
   {
-    key : fs.readFileSync("certs/server-key.pem"),
-    cert : fs.readFileSync("certs/server-crt.pem"),
-    ca: fs.readFileSync("certs/ca-crt.pem"), 
+    key : fs.readFileSync("certs/new/private.key"),
+    cert : fs.readFileSync("certs/new/certificate.crt"),
+    ca: fs.readFileSync("certs/new/ca_bundle.crt"), 
   }, app).listen(app.get('port'), function () {
   console.log('Web server listening on port ' + app.get('port'));
 });

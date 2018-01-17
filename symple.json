@@ -22,9 +22,9 @@
   
   "ssl" : {
     "enabled" : true,
-    "key" : "certs/server-key.pem",
-    "cert" : "certs/server-crt.pem",
-    "ca" : "ca-crt.pem"
+    "key" : "certs/new/private.key",
+    "cert" : "certs/new/certificate.crt",
+    "ca" : "certs/new/ca_bundle.crt"
   }
   
 }
